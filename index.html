@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skillora - Learn Skills. Build Future.</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f7f8fa;color:#0f172a}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:#fff;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}
+.logo{font-size:28px;font-weight:700;display:flex;align-items:center;gap:8px}
+nav{display:flex;gap:32px}
+nav a{text-decoration:none;color:#475569;font-weight:500}
+.btn-primary{background:#2196b0;color:#fff;padding:12px 28px;border-radius:12px;border:none;font-weight:600;cursor:pointer}
+.btn-secondary{background:#fff;color:#0f172a;padding:12px 28px;border-radius:12px;border:1px solid #cbd5e1;font-weight:600;cursor:pointer}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px;gap:60px;flex-wrap:wrap}
+.hero-left{flex:1;min-width:320px;display:flex;flex-direction:column;gap:20px}
+.badge{background:#d6f0f2;color:#0e8a9e;padding:6px 14px;border-radius:20px;font-size:13px;width:fit-content;font-weight:600}
+.hero h1{font-size:52px;line-height:1.1;font-weight:800}
+.hero p{color:#64748b;font-size:16px;line-height:1.6}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero-right{flex:1;min-width:320px;display:flex;justify-content:center}
+.features{padding:60px 80px;text-align:center}
+.features h2{font-size:28px;margin-bottom:8px}
+.features > p{color:#64748b;margin-bottom:40px}
+.cards{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.card{background:#fff;padding:32px 24px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.06);flex:1;min-width:280px;max-width:360px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.icon{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:28px}
+footer{text-align:center;padding:24px;color:#94a3b8;border-top:1px solid #e2e8f0;background:#fff;margin-top:40px}
+
+@media(max-width:768px){
+ header{padding:16px 20px}
+ .hero{padding:32px 20px;flex-direction:column-reverse}
+ .hero h1{font-size:32px}
+ .features{padding:32px 20px}
+ nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🎓 Skillora</div>
+  <nav>
+    <a href="#">Courses</a>
+    <a href="#">Features</a>
+    <a href="#">About</a>
+    <a href="#">Pricing</a>
+  </nav>
+  <button class="btn-primary">Join Free</button>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <span class="badge">NEW • 500+ Courses + Your AirGuard Project</span>
+    <h1>Learn Skills.<br>Build Future.</h1>
+    <p>Skillora is an educational platform that helps you learn coding, design, IoT and career skills with real projects like Wearable Environmental Monitoring - anytime, anywhere.</p>
+    <div class="hero-btns">
+      <button class="btn-primary">Start Learning →</button>
+      <button class="btn-secondary">Explore Courses</button>
+    </div>
+    <small style="color:#94a3b8">✓ Free 30-day trial • 2-year certificate • Learn in 24h</small>
+  </div>
+  <div class="hero-right">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" width="360" alt="learning">
+  </div>
+</section>
+
+<section class="features">
+  <h2>Everything you need to learn</h2>
+  <p>Designed for students. Practical. Certified. Job-ready.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon" style="background:#e0f2fe">📡</div>
+      <h3>Real-Time Projects</h3>
+      <p style="color:#64748b;font-size:14px">Build IoT projects like Environmental Monitor with sensors and mobile app.</p>
+    </div>
+    <div class="card">
+      <div class="icon" style="background:#d1fae5">🌡️</div>
+      <h3>Temperature & IoT</h3>
+      <p style="color:#64748b;font-size:14px">Learn Arduino, DHT11, MQ135, ESP32 and cloud integration hands-on.</p>
+    </div>
+    <div class="card">
+      <div class="icon" style="background:#ede9fe">🎧</div>
+      <h3>Mentor Support</h3>
+      <p style="color:#64748b;font-size:14px">Get guidance, viva preparation and presentation help from experts.</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2024 Skillora - Learning Platform • Privacy • Terms • Contact</footer>
+
+</body>
+</html>
